@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+}
+/*Main flex boxes*/
+main {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  align-items: center;
+  border: 2px solid green;
+  gap: 10px;
+}
+.fourBox {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  flex: 1;
+  width: 500px;
+}
+.twoBox {
+  display: flex;
+  flex: 1;
+  border: 2px solid black;
+}
+.twoBox h3 {
+  text-align: center;
+}
+/*Main flex boxes*/
+footer {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  border: 2px solid yellow;
+}
