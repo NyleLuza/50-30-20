@@ -12,30 +12,35 @@
     <main>
       <div class="fourBox">
         <div class="twoBox">
-          <h3>Enter Paycheck</h3>
+          <h3 class="sub">Enter Paycheck</h3>
         </div>
-        <div class="twoBox"></div>
+        <div class="twoBox">
+          <input type="text" placeholder="Enter amount: $" id="pay" />
+          <button id="submit">submit</button>
+        </div>
       </div>
       <div class="fourBox">
         <div class="twoBox">
-          <h3>Expenses/Needs</h3>
+          <h3 class="sub">Expenses/Needs</h3>
         </div>
-        <div class="twoBox"></div>
+        <div id="needsText"></div>
       </div>
       <div class="fourBox">
         <div class="twoBox">
-          <h3>Wants</h3>
+          <h3 class="sub">Wants</h3>
         </div>
-        <div class="twoBox"></div>
+        <div id="wantsText"></div>
       </div>
       <div class="fourBox">
         <div class="twoBox">
-          <h3>Savings</h3>
+          <h3 class="sub">Savings</h3>
         </div>
-        <div class="twoBox"></div>
+        <div id="savingsText"></div>
       </div>
     </main>
-    <footer>bottom of page</footer>
+    <footer>
+      <button id="reset">reset</button>
+    </footer>
   </body>
 
   <script src="script.js"></script>

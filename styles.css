@@ -19,13 +19,14 @@ main {
   flex: 1;
   width: 500px;
 }
-.twoBox {
+.fourBox > div {
   display: flex;
+  justify-content: center;
   flex: 1;
   border: 2px solid black;
 }
-.twoBox h3 {
-  text-align: center;
+.sub {
+  border: 2px solid blue;
 }
 /*Main flex boxes*/
 footer {
