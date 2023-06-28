@@ -13,21 +13,27 @@ btn.addEventListener("click", () => {
   let savingsAmount = calc(20, amount);
 
   let nT = createEle(needsAmount);
+  nT.style.fontSize = "50px";
   let wT = createEle(wantsAmount);
+  wT.style.fontSize = "50px";
   let sT = createEle(savingsAmount);
+  sT.style.fontSize = "50px";
 
   needsTxt.append(nT);
   wantsTxt.append(wT);
   savingsTxt.append(sT);
 });
 
-resetButton.addEventListener("click");
-needsTxt;
-function resetWeb() {}
+resetButton.addEventListener("click", () => {
+  needsTxt.innerHTML = "";
+  wantsTxt.innerHTML = "";
+  savingsTxt.innerHTML = "";
+});
 
 function createEle(amount) {
   let textBox = document.createElement("div");
-  textBox.innerText = amount;
+  textBox.setAttribute("id", "txt");
+  textBox.innerText = "$" + amount;
   return textBox;
 }
 
