@@ -1,0 +1,66 @@
+body {
+  background-color: white;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  height: 570px;
+  flex: 1;
+  border: 2px solid blue;
+}
+h1 {
+  text-align: center;
+}
+.upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  border: 2px solid black;
+}
+
+.lower {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  border: 2px solid black;
+}
+/*left side box*/
+.leftLower {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 450px;
+}
+h2 {
+  text-align: center;
+}
+.lowerColumn2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  align-items: center;
+  flex: 1;
+  border: 2px solid red;
+}
+#purchase {
+  height: 40px;
+  width: 300px;
+}
+#purchase1 {
+  height: 100px;
+  width: 300px;
+}
+#btn {
+  width: 306px;
+}
+#btn:hover {
+  width: 306px;
+  background-color: gray;
+  transition: 0.3s;
+}
+/*left side box*/
+.rightLower {
+  flex: 1;
+  border: 2px solid red;
+}

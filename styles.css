@@ -42,7 +42,8 @@ main {
   padding-top: 4px;
   background-color: #a9a9a9;
   text-align: center;
-  width: 700px;
+  width: 500px;
+  height: 30px;
 }
 /*Main flex boxes*/
 footer {
