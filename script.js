@@ -10,11 +10,13 @@ let resetButton = document.getElementById("reset");
 btn.addEventListener('click', function(e) {
   e.preventDefault();
   const amount = parseFloat(inputAmount.value); //gets total amount
+  
   let needsAmount = calc(50, amount);
   let wantsAmount = calc(30, amount);
   let savingsAmount = calc(20, amount);
-
+  localStorage.setItem('overallB', amount);
   localStorage.setItem('needs-Amount', needsAmount);
+  
 
   let nT = createEle(needsAmount);
   nT.style.fontSize = "50px";
