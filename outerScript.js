@@ -2,16 +2,17 @@
 const expensesButton = document.getElementById("btnE");
 const purchaseAmount = document.getElementById("purchase");
 const purchaseDesc = document.getElementById("purchase1");
-const expensesAmount = localStorage.getItem('needs-Amount');
-const rightText = document.getElementById("rightLower");
-const updatingBalance = document.getElementsByClassName("currentBalance");
+let expensesAmount = localStorage.getItem('needs-Amount');
+const numText = document.getElementById("numberText");
+const descText = document.getElementById("descriptionText");
+let updatingBalance = document.getElementsByClassName("currentBalance");
 expensesButton.addEventListener('click',function(e){
     e.preventDefault();
-    let amount = expensesAmount;
-    let newAmount = parseFloat(purchaseAmount.value) - amount;
-    
-    let nT = createEle(newAmount);
-    rightText.append(nT);
+     expensesAmount = expensesAmount - parseFloat(purchaseAmount.value);
+    let nT = createEle(expensesAmount);
+    let dT = createText(purchaseDesc.value);
+    numText.append(nT);
+    descText.append(dT);
     
 });
 
@@ -20,4 +21,11 @@ function createEle(amount) {
     textBox.setAttribute("id", "txt");
     textBox.innerText = "$" + amount;
     return textBox;
+  }
+
+  function createText(description){
+    let descriptionBox = document.createElement("div");
+    descriptionBox.setAttribute("id", "userDescription")
+    descriptionBox.innerText = description;
+    return descriptionBox;
   }

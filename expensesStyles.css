@@ -61,6 +61,44 @@ h2 {
 }
 /*left side box*/
 .rightLower {
+  display: flex;
+  flex-direction: column;
   flex: 1;
+  border: 2px solid red;
+}
+.upperBox{
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  border: 2px solid black;
+}
+.lowerBox{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+#remaining{
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  text-align: center;
+  border: 2px solid black;
+  padding-bottom: 10px;
+}
+#description{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 2px solid black;
+}
+h4{
+  text-align: center;
+}
+#userDescription{
+  display: flex;
+  border: 2px solid red;
+}
+#txt{
+  display: flex;
   border: 2px solid red;
 }

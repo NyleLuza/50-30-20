@@ -24,6 +24,7 @@
             <input type="text" placeholder="Enter amount $:" id="purchase" />
             <textarea
               name="paragraph_text"
+              id="inputTxt"
               placeholder="Describe Purchase"
               cols="50"
               rows="10"
@@ -32,7 +33,20 @@
             <button id="btnE">Submit</button>
           </div>
         </div>
-        <div id="rightLower"></div>
+        <div class="rightLower">
+          <div class="upperBox">
+            <div id="remaining">
+              <h4>Remaining Balance</h4>
+            </div>
+            <div id="description">
+              <h4>Purchase Description</h4>
+            </div>
+          </div>
+          <div class="lowerBox">
+            <div id="numberText"></div>
+            <div id="descriptionText"></div>
+          </div>
+        </div>
       </div>
     </main>
     <footer></footer>
