@@ -13,12 +13,19 @@ h1 {
 }
 .upper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   height: 100px;
   border: 2px solid black;
 }
-
+.oB{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: 2px solid red;
+}
 .lower {
   display: flex;
   flex-direction: row;
@@ -64,13 +71,13 @@ h2 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  border: 2px solid red;
+  //border: 2px solid red;
 }
 .upperBox{
   display: flex;
   flex-direction: row;
   height: 70px;
-  border: 2px solid black;
+  //border: 2px solid black;
 }
 .lowerBox{
   display: flex;
@@ -80,25 +87,36 @@ h2 {
 #remaining{
   display: flex;
   flex-direction: column;
+  border: 1px solid red;
   width: 130px;
   text-align: center;
-  border: 2px solid black;
   padding-bottom: 10px;
 }
 #description{
   display: flex;
+  border: 1px solid red;
   flex-direction: column;
   flex: 1;
-  border: 2px solid black;
 }
 h4{
   text-align: center;
 }
-#userDescription{
+
+#numberText{
   display: flex;
-  border: 2px solid red;
+  flex-direction: column;
+  width: 132px;
+}
+#descriptionText{
+  display: flex;
+  flex-direction: column;
+}
+#userDescription{
+  text-align: center;
+  width: 430px;
+  border: 1px solid black;
 }
 #txt{
-  display: flex;
-  border: 2px solid red;
+  text-align: center;
+  border: 1px solid black;
 }
