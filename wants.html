@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="expensesStyles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Wants List</h1>
+    </header>
+    <main>
+      <div class="upper">
+        <div class="oB">
+          <h3>Overall Balance:</h3>
+          <div id="currentBalance"></div>
+        </div>
+        <div class="oB">
+          <h3>Expenses Balance:</h3>
+          <div id="expensesBalance"></div>
+        </div>
+      </div>
+      <div class="lower">
+        <div class="leftLower">
+          <div class="lowerColumn1"><h2>Enter Purchase</h2></div>
+          <div class="lowerColumn2">
+            <input type="text" placeholder="Enter amount $:" id="purchase" />
+            <textarea
+              id="purchase1"
+              name="paragraph_text"
+              placeholder="Describe Purchase"
+              cols="50"
+              rows="10"
+            ></textarea>
+            <button id="btnE">Submit</button>
+          </div>
+        </div>
+        <div class="rightLower">
+          <div class="upperBox">
+            <div id="remaining">
+              <h4>Remaining Balance</h4>
+            </div>
+            <div id="description">
+              <h4>Purchase Description</h4>
+            </div>
+          </div>
+          <div class="lowerBox">
+            <div id="numberText"></div>
+            <div id="descriptionText"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer><button id="reset">reset</button></footer>
+  </body>
+  <script src="outerScript.js"></script>
+</html>
