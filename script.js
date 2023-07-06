@@ -7,6 +7,7 @@ let needsTxt = document.getElementById("needsText");
 let savingsTxt = document.getElementById("savingsText");
 let resetButton = document.getElementById("reset");
 
+
 btn.addEventListener('click', function(e) {
   e.preventDefault();
   const amount = parseFloat(inputAmount.value); //gets total amount
@@ -16,6 +17,9 @@ btn.addEventListener('click', function(e) {
   let savingsAmount = calc(20, amount);
   localStorage.setItem('overallB', amount);
   localStorage.setItem('needs-Amount', needsAmount);
+  localStorage.setItem('savings-Amount', savingsAmount);
+  localStorage.setItem('wants-Amount', wantsAmount);
+
   
 
   let nT = createEle(needsAmount);
@@ -28,6 +32,7 @@ btn.addEventListener('click', function(e) {
   needsTxt.append(nT);
   wantsTxt.append(wT);
   savingsTxt.append(sT);
+
 });
 
 resetButton.addEventListener("click", () => {
