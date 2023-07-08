@@ -1,5 +1,12 @@
+header{
+  background-color: #778899;
+  width: 2000px;
+  margin-left: -8px;
+  margin-top: -8px;
+  margin-right: -8px;
+}
 body {
-  background-color: white;
+  background-color: #dcdcdc;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +16,9 @@ main {
   flex-direction: column;
   height: 570px;
   width: 1000px;
-  border: 2px solid blue;
+  border: 2px solid #778899;
+  background-color: #F5F5F5;
+  margin-top: 40px;
 }
 h1 {
   text-align: center;
@@ -20,27 +29,30 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 100px;
-  border: 2px solid black;
+  
 }
 .oB{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  border: 2px solid red;
+  margin: 10px;
+  text-decoration: underline;
 }
 .lower {
   display: flex;
   flex-direction: row;
+  
   flex: 1;
-  border: 2px solid black;
+ 
 }
 /*left side box*/
 .leftLower {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
+  border: 2px solid #778899;
   width: 450px;
+  text-decoration: underline;
 }
 h2 {
   text-align: center;
@@ -51,7 +63,7 @@ h2 {
   padding-top: 50px;
   align-items: center;
   flex: 1;
-  border: 2px solid red;
+  
 }
 #purchase {
   height: 40px;
@@ -61,13 +73,15 @@ h2 {
   height: 100px;
   width: 300px;
 }
-#btn {
+#btnE {
   width: 306px;
+  text-decoration: none;
 }
-#btn:hover {
+#btnE:hover {
   width: 306px;
-  background-color: gray;
-  transition: 0.3s;
+  background-color: #696969;
+  transition: 0.4s;
+  font-size: larger;
 }
 /*left side box*/
 .rightLower {
@@ -90,14 +104,14 @@ h2 {
 #remaining{
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  border: 2px solid #778899;
   width: 130px;
   text-align: center;
   padding-bottom: 10px;
 }
 #description{
   display: flex;
-  border: 1px solid red;
+  border: 2px solid #778899;
   flex-direction: column;
   flex: 1;
 }
@@ -124,4 +138,12 @@ h4{
   
 }
 
+#reset{
+  margin: 30px;
+}
+#reset:hover{
+  background-color: #696969;
+  transition: 0.4s;
+  font-size: larger;
+}
 //TODO: Update styles of each css file to make it pretty
